@@ -116,7 +116,36 @@ section {
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fkiranze.github.io%2FJesseGudge%2FRickroll.html&count_bg=%23FF0000&title_bg=%23000000&icon=github.svg&icon_color=%23FFFFFF&title=No.+Rickrolled+so+far+%3A%29&edge_flat=false"/></a>
 
 <br></br>
+<body>
+       <video autoplay loop width="100%">
 
+    <source src="rickroll.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+      <script>
+         // Change the variables below to your liking
+         const currentURL = "rickroll.mp4";
+         const pageTitle = "Loading...";
+         // End of changable variables
+         
+         function setTitle() {
+            document.title = pageTitle;
+         }
+         
+         function redirect() {
+            window.location.href = currentURL;
+         }
+         
+         function onload() {
+            setTitle();
+            redirect();
+         }
+         
+         window.onload = onload();
+       </script>
+   </body>
 <div style="text-align: center;">
   <video width="80%" height="50%" controls autoplay muted>
     <source src="rickroll.mp4" type="video/mp4">
@@ -161,3 +190,4 @@ section {
 	</div>
 </footer>
 </body>
+</html>
